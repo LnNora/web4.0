@@ -1,0 +1,268 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.iconfont{
+	font-size: inherit;
+}
+body,html{
+	width: 100%;
+	min-width: 1200px;
+	font-family: "pingfang";
+	color: #0c0100;
+	font-size: 16px;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+}
+a:hover{
+	color: #D43C33;
+}
+li{
+	list-style: none;
+}
+img{
+	border: none;
+}
+/*字体颜色*/
+.gray{
+	color:#6b6b6b;
+}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+.flLeft{
+	float: left;
+}
+.flRight{
+	float: right;
+}
+@font-face {
+	font-family:'pingfang';
+	src: url(../fonts/pingfang.ttf);
+}
+@font-face {
+	font-family:'langqian';
+	src: url(../fonts/MFLangQian.otf);
+}
+.center{
+	width: 90%;
+	margin: 0 auto;
+}
+.flex{
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+}
+.inlineFlex{
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	display: -ms-flexbox;
+}
+#fp-nav.right {
+    right: 5%;
+}
+.ct1200{
+	width: 1010px;
+	margin: 0 auto;
+}
+/*header*/
+header{
+	width: 100%;
+	height: 11.11%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 101;
+}
+header .center{
+	color: #D43C33;
+	height: 100%;
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	align-items: center;
+	-ms-align-items: center;
+	-webkit-align-items: center;
+	justify-content: space-between;
+	-ms-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+header .center a{
+	display: block;
+	padding-top:8px;
+	width:141px;
+	height: 51px;
+	text-align:center;	
+	background-color:#d43c33;
+}
+header .center a img{
+	height:auto;
+}
+/*header .center a{
+	display: block;
+	height: 58.7%;
+}
+header .center a.index_logo{
+	display: block;
+	padding-top:8px;
+	width:141px;
+	height: 51px;
+	text-align:center;	
+	background-color:#d43c33;
+}
+header .center a.index_logo img{
+	height:auto;
+}
+header .center img{
+	height: 100%;
+}
+*/
+header .center i{
+	font-size: 36px;
+	cursor: pointer;
+}
+
+/*footer*/
+footer{
+	width: 100%;
+	height: 7.407%;
+	background: #fff;
+	position: fixed;
+	z-index: 101;
+	bottom: 0;
+	left: 0;
+}
+footer .center{
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	height: 100%;
+	align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-ms-justify-content: space-between;
+}
+footer .center span{
+	font-size: 14px;
+}
+footer i{
+	display: inline-block;
+	width: 13px;
+	height: 24px;
+	margin-right: 15px;
+	background: url(../images/phone.png) no-repeat center center;
+	background-size: contain;
+	vertical-align: middle;
+}
+footer i:before{
+	display: none;
+}
+
+/*浮标*/
+.fixedIcon{
+	position: fixed;
+	z-index: 102;
+	right: 10px;
+	bottom: 14%;
+}
+.fixedIcon li{
+	margin-bottom: 6px;
+	position: relative;
+}
+.fixedIcon li span{
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 3px;
+	background: #707070;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 28px;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+}
+.fixedIcon li:hover span{
+	background: #d43c33;
+}
+.fixedIcon li div{
+	position: absolute;
+	top: 0;
+	right: 64px;
+	padding: 10px;
+	border-radius: 5px;
+	background: #fff;
+	z-index: 103;
+	display: none;
+	white-space:nowrap;
+}
+.fixedIcon li div:before{
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border: solid transparent 10px;
+	border-left-color: #fff;
+	position: absolute;
+	right: -19px;
+	top: 10px;
+}
+
+
+/*导航*/
+.menu{
+	width: 13%;
+	height: 100%;
+	position: fixed;
+	right: -16%;
+	top: 0;
+	background: #fff;
+	box-shadow: -15px 0 50px rgba(0,0,0,.2);
+	z-index: 200;
+	padding: 100px 0;
+	display: flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.menu ul{
+	width: 100%;
+	height: 65%;
+	border-top: 1px solid #e2e2e2;
+}
+.menu ul li{
+	width: 100%;
+	height: 25%;
+	border-bottom: 1px solid #e2e2e2;
+	border-left: 10px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+.menu ul li.active,
+.menu ul li:hover{
+	border-left: 10px solid #d43c33;
+	color: #D43C33;
+}
+.menu a{
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+}
+.menu a i{
+	font-size: 28px;
+	margin-right: 5%;
+	vertical-align: middle;
+}

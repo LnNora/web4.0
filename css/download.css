@@ -1,0 +1,85 @@
+body,html{
+	background: #f8f8fa;
+	height: 100%;
+}
+header,footer{
+	position: static;
+}
+.download{
+	width: 100%;
+	height: 81.483%;
+	display: flex;
+	display: -webkit-flex;
+	background: url(../images/downloadBg.png) no-repeat top center;
+	background-size: 100%;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+}
+.download .iphone{
+	height: 86.07%;
+	width: auto;
+}
+.download .Content{
+	width: 28.125%;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.download .Content .downloadTitle,
+.download .Content .downloadTitle img,
+.download .Content .qrCode2 img{
+	width: 100%;
+}
+.download .Content .qrCode2{
+	width: 37%;
+	margin-left: 5%;
+}
+.download .Content .downloadBtn{
+	/*flex: 1;
+	-webkit-flex: 1;*/
+	width:58%;
+}
+.download .Content .downloadBtn a{
+	display:block;
+	text-align:center;
+	padding:6% 0;
+	width: 100%;
+	border-radius: 10px;
+	background: #5fa8ff;
+	margin-bottom: 6%;
+	color: #fff;
+	font-size: 36px;
+	/*display: flex;
+	display: -webkit-flex;
+	width: 100%;
+	height: 45%;
+	border-radius: 10px;
+	background: #5fa8ff;
+	margin-bottom: 6%;
+	color: #fff;
+	flex-direction: row;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+	font-size: 36px;
+	*/
+}
+.download .Content .downloadBtn a i{
+	margin-right: 20px;
+	font-size: 40px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+	.download .Content .downloadBtn a{
+		font-size: 28px;
+	}
+	.download .Content .downloadBtn a i{
+		margin-right: 15px;
+		font-size: 32px;
+	}
+}
