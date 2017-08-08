@@ -39,6 +39,24 @@ $(function(){
 				},function(){
 					$('.product li').removeClass('active');
 				});
+		var rotateBoxs = document.getElementsByClassName('rotateBox');
+	        var rotateBoxs_length =rotateBoxs.length;
+			var i =0;
+			var num = 180;
+			function flip(){//自动翻转
+				if(i<rotateBoxs_length){
+				var deg = "rotateY("+num+"deg)";
+				rotateBoxs[i].style.transform = deg;
+				if(num==180){
+					num-=180;
+					setTimeout(flip,800);}
+				else{
+					i++;
+					num=180;
+					setTimeout(flip,800);}
+				}
+				}
+				setTimeout(flip,2000);
 				if(broad == true){
 					b_move();
 				}
@@ -52,6 +70,8 @@ $(function(){
 					clearInterval(timer);
 					broad = false;
 				})
+			
+			
 
 			}
 			if(index == 3) {

@@ -319,13 +319,16 @@ body,html{
 	background: #D43C33;
 	color: #fff !important;
 }
+.product ul li:hover .rotateBox{
+    -webkit-transform: rotateY( 180deg ) !important;
+    -moz-transform: rotateY( 180deg ) !important;
+    -o-transform: rotateY( 180deg ) !important;
+    transform: rotateY( 180deg ) !important;
+}
 /*.product ul li.active .rotateBox{
   transform: rotateY( 180deg );
 }*/
-/*.rotateBox{border:solid 1px;}
-.rotateBox:hover{
-	transform:rotateY(180deg) !important;
-}*/
+
 .product .broadcast{
 	position: absolute;
 	bottom: 12%;

@@ -329,37 +329,26 @@
 			setTimeout(flip,4000);
 		</script>
 		---->
-		<script type="text/javascript">
-			var rotateBoxs = document.getElementsByClassName('rotateBox');
-	        var rotateBoxs_length =rotateBoxs.length;
-			var i =0;
-			var num = 180;
-			/*function flip(){
-				if(i<rotateBoxs_length){
-				var deg = "rotateY("+num+"deg)";
-				rotateBoxs[i].style.transform = deg;
-				if(num==180){
-					num-=180;
-					setTimeout(flip,800);}
-				else{
-					i++;
-					num=180;
-					setTimeout(flip,800);}
-				}
-				}
-				setTimeout(flip,4000);*/
-			 for(j=0;j<2;j++ ){
-				rotateBoxs[j].addEventListener("mouseover",hello,false);
-				function hello(){
-			 	/*rotateBoxs[j].style.transform = "rotateY(180deg)";*/
-				alert(j);
-				return false;
-				}
-			   }
-			   
-			   
-			  
+		
+			
+			<!--for(j=0;j<rotateBoxs_length;j++ ){
+				(function(arg){
+				rotateBoxs[j].addEventListener("mouseenter",flipFront,false);
+				rotateBoxs[j].addEventListener("mouseleave",flipBack,false);
 				
+				function flipFront(){
+			 	rotateBoxs[arg].style.transform = "rotateY(180deg)";
+				}
+				
+				function flipBack(){
+			 	rotateBoxs[arg].style.transform = "rotateY(0deg)";
+				}
+				})(j);
+			   }
+			 --> 
+			   
+			          
+    
 				
 		
 		</script>
@@ -373,3 +362,25 @@
 		
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
